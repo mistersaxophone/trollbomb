@@ -90,32 +90,32 @@ public class BlueprintMakerGUIMenu extends AbstractContainerMenu implements Supp
 				return (Items.PAPER == stack.getItem());
 			}
 		}));
-		this.customSlots.put(1, this.addSlot(new SlotItemHandler(internal, 1, 140, 12) {
-			@Override
-			public void setChanged() {
-				super.setChanged();
-				slotChanged(1, 0, 0);
-			}
-		}));
-		this.customSlots.put(2, this.addSlot(new SlotItemHandler(internal, 2, 140, 36) {
+		this.customSlots.put(2, this.addSlot(new SlotItemHandler(internal, 2, 140, 12) {
 			@Override
 			public void setChanged() {
 				super.setChanged();
 				slotChanged(2, 0, 0);
 			}
 		}));
-		this.customSlots.put(3, this.addSlot(new SlotItemHandler(internal, 3, 139, 58) {
+		this.customSlots.put(3, this.addSlot(new SlotItemHandler(internal, 3, 140, 36) {
 			@Override
 			public void setChanged() {
 				super.setChanged();
 				slotChanged(3, 0, 0);
 			}
 		}));
-		this.customSlots.put(4, this.addSlot(new SlotItemHandler(internal, 4, 6, 60) {
+		this.customSlots.put(4, this.addSlot(new SlotItemHandler(internal, 4, 139, 58) {
 			@Override
 			public void setChanged() {
 				super.setChanged();
 				slotChanged(4, 0, 0);
+			}
+		}));
+		this.customSlots.put(1, this.addSlot(new SlotItemHandler(internal, 1, 6, 60) {
+			@Override
+			public void setChanged() {
+				super.setChanged();
+				slotChanged(1, 0, 0);
 			}
 
 			@Override

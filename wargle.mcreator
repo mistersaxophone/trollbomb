@@ -326,6 +326,93 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "awesomeshop"
+    },
+    {
+      "name": "OneItemRecipes",
+      "type": "procedure",
+      "sortid": 32,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "one_item_recipes",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/experimental/Recipe Procedures"
+    },
+    {
+      "name": "TwoItemRecipes",
+      "type": "procedure",
+      "sortid": 33,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "two_item_recipes",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/experimental/Recipe Procedures"
+    },
+    {
+      "name": "ThreeItemRecipes",
+      "type": "procedure",
+      "sortid": 34,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "three_item_recipes",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/experimental/Recipe Procedures"
     }
   ],
   "variable_elements": [],
@@ -363,7 +450,12 @@
     "children": [
       {
         "name": "experimental",
-        "children": []
+        "children": [
+          {
+            "name": "Recipe Procedures",
+            "children": []
+          }
+        ]
       },
       {
         "name": "kelton",

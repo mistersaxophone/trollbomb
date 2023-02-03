@@ -74,10 +74,6 @@ public class BlueprintMakerGUISlotMessage {
 
 			BlueprintMakerUpdateProcedure.execute(world, x, y, z);
 		}
-		if (slotID == 1 && changeType == 0) {
-
-			BlueprintMakerUpdateProcedure.execute(world, x, y, z);
-		}
 		if (slotID == 2 && changeType == 0) {
 
 			BlueprintMakerUpdateProcedure.execute(world, x, y, z);
@@ -87,6 +83,10 @@ public class BlueprintMakerGUISlotMessage {
 			BlueprintMakerUpdateProcedure.execute(world, x, y, z);
 		}
 		if (slotID == 4 && changeType == 0) {
+
+			BlueprintMakerUpdateProcedure.execute(world, x, y, z);
+		}
+		if (slotID == 1 && changeType == 0) {
 
 			BlueprintMakerUpdateProcedure.execute(world, x, y, z);
 		}

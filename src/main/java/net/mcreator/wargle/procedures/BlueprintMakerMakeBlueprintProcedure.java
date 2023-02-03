@@ -47,7 +47,7 @@ public class BlueprintMakerMakeBlueprintProcedure {
 							.ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
 				return _retval.get();
 			}
-		}.getItemStack(world, new BlockPos(x, y, z), 1));
+		}.getItemStack(world, new BlockPos(x, y, z), 2));
 		stack2 = (new Object() {
 			public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
 				AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
@@ -57,7 +57,7 @@ public class BlueprintMakerMakeBlueprintProcedure {
 							.ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
 				return _retval.get();
 			}
-		}.getItemStack(world, new BlockPos(x, y, z), 2));
+		}.getItemStack(world, new BlockPos(x, y, z), 3));
 		stack3 = (new Object() {
 			public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
 				AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
@@ -67,7 +67,7 @@ public class BlueprintMakerMakeBlueprintProcedure {
 							.ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
 				return _retval.get();
 			}
-		}.getItemStack(world, new BlockPos(x, y, z), 3));
+		}.getItemStack(world, new BlockPos(x, y, z), 4));
 		cost1 = new Object() {
 			public double getValue(LevelAccessor world, BlockPos pos, String tag) {
 				BlockEntity blockEntity = world.getBlockEntity(pos);
@@ -119,7 +119,7 @@ public class BlueprintMakerMakeBlueprintProcedure {
 									.ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
 						return _retval.get();
 					}
-				}.getItemStack(world, new BlockPos(x, y, z), 4)).getItem() == Blocks.AIR.asItem() && tier > 0) {
+				}.getItemStack(world, new BlockPos(x, y, z), 1)).getItem() == Blocks.AIR.asItem() && tier > 0) {
 					{
 						BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
 						if (_ent != null) {
@@ -183,7 +183,7 @@ public class BlueprintMakerMakeBlueprintProcedure {
 					{
 						BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
 						if (_ent != null) {
-							final int _slotid = 4;
+							final int _slotid = 1;
 							final ItemStack _setstack = Blueprint;
 							_setstack.setCount(1);
 							_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> {

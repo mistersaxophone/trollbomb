@@ -33,23 +33,6 @@
           "inputLimit": {
             "value": ""
           },
-          "id": 1,
-          "disableStackInteraction": false,
-          "dropItemsWhenNotBound": true,
-          "onSlotChanged": {
-            "name": "BlueprintMakerUpdate"
-          },
-          "name": "Slot #1",
-          "x": 265,
-          "y": 48
-        }
-      },
-      {
-        "type": "inputslot",
-        "data": {
-          "inputLimit": {
-            "value": ""
-          },
           "id": 2,
           "disableStackInteraction": false,
           "dropItemsWhenNotBound": true,
@@ -58,7 +41,7 @@
           },
           "name": "Slot #2",
           "x": 265,
-          "y": 72
+          "y": 48
         }
       },
       {
@@ -74,13 +57,16 @@
             "name": "BlueprintMakerUpdate"
           },
           "name": "Slot #3",
-          "x": 264,
-          "y": 94
+          "x": 265,
+          "y": 72
         }
       },
       {
-        "type": "outputslot",
+        "type": "inputslot",
         "data": {
+          "inputLimit": {
+            "value": ""
+          },
           "id": 4,
           "disableStackInteraction": false,
           "dropItemsWhenNotBound": true,
@@ -88,6 +74,20 @@
             "name": "BlueprintMakerUpdate"
           },
           "name": "Slot #4",
+          "x": 264,
+          "y": 94
+        }
+      },
+      {
+        "type": "outputslot",
+        "data": {
+          "id": 1,
+          "disableStackInteraction": false,
+          "dropItemsWhenNotBound": true,
+          "onSlotChanged": {
+            "name": "BlueprintMakerUpdate"
+          },
+          "name": "Slot #1",
           "x": 131,
           "y": 96
         }
@@ -107,6 +107,19 @@
           "name": "Make Blueprint",
           "x": 158,
           "y": 70
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "<ENBT:text:producedItem>",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "<ENBT:text:producedItem>",
+          "x": 154,
+          "y": 97
         }
       }
     ],
