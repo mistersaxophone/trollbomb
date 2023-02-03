@@ -17,15 +17,16 @@ import java.util.concurrent.atomic.AtomicReference;
 
 public class BlueprintMakerMakeBlueprintProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z) {
-		double cost1 = 0;
-		double cost2 = 0;
-		double cost3 = 0;
 		String itemMade = "";
 		ItemStack paperstack = ItemStack.EMPTY;
 		ItemStack stack1 = ItemStack.EMPTY;
 		ItemStack stack2 = ItemStack.EMPTY;
 		ItemStack stack3 = ItemStack.EMPTY;
 		ItemStack Blueprint = ItemStack.EMPTY;
+		double cost1 = 0;
+		double cost2 = 0;
+		double cost3 = 0;
+		double tier = 0;
 		paperstack = (new Object() {
 			public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
 				AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
@@ -98,87 +99,97 @@ public class BlueprintMakerMakeBlueprintProcedure {
 				return "";
 			}
 		}.getValue(world, new BlockPos(x, y, z), "producedItem");
+		tier = new Object() {
+			public double getValue(LevelAccessor world, BlockPos pos, String tag) {
+				BlockEntity blockEntity = world.getBlockEntity(pos);
+				if (blockEntity != null)
+					return blockEntity.getPersistentData().getDouble(tag);
+				return -1;
+			}
+		}.getValue(world, new BlockPos(x, y, z), "itemTier");
 		if (paperstack.getItem() == Items.PAPER) {
-			if ((new Object() {
-				public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
-					AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
-					BlockEntity _ent = world.getBlockEntity(pos);
-					if (_ent != null)
-						_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null)
-								.ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
-					return _retval.get();
-				}
-			}.getItemStack(world, new BlockPos(x, y, z), 4)).getItem() == Blocks.AIR.asItem() && (stack1).getCount() >= cost1
-					&& (stack2).getCount() >= cost2 && (stack3).getCount() >= cost3) {
-				{
-					BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
-					if (_ent != null) {
-						final int _slotid = 0;
-						final int _amount = 1;
-						_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> {
-							if (capability instanceof IItemHandlerModifiable) {
-								ItemStack _stk = capability.getStackInSlot(_slotid).copy();
-								_stk.shrink(_amount);
-								((IItemHandlerModifiable) capability).setStackInSlot(_slotid, _stk);
-							}
-						});
+			if ((stack1).getCount() >= cost1 && (stack2).getCount() >= cost2 && (stack3).getCount() >= cost3) {
+				if ((new Object() {
+					public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
+						AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
+						BlockEntity _ent = world.getBlockEntity(pos);
+						if (_ent != null)
+							_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null)
+									.ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
+						return _retval.get();
 					}
-				}
-				{
-					BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
-					if (_ent != null) {
-						final int _slotid = 1;
-						final int _amount = (int) cost1;
-						_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> {
-							if (capability instanceof IItemHandlerModifiable) {
-								ItemStack _stk = capability.getStackInSlot(_slotid).copy();
-								_stk.shrink(_amount);
-								((IItemHandlerModifiable) capability).setStackInSlot(_slotid, _stk);
-							}
-						});
+				}.getItemStack(world, new BlockPos(x, y, z), 4)).getItem() == Blocks.AIR.asItem() && tier > 0) {
+					{
+						BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
+						if (_ent != null) {
+							final int _slotid = 0;
+							final int _amount = 1;
+							_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> {
+								if (capability instanceof IItemHandlerModifiable) {
+									ItemStack _stk = capability.getStackInSlot(_slotid).copy();
+									_stk.shrink(_amount);
+									((IItemHandlerModifiable) capability).setStackInSlot(_slotid, _stk);
+								}
+							});
+						}
 					}
-				}
-				{
-					BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
-					if (_ent != null) {
-						final int _slotid = 2;
-						final int _amount = (int) cost2;
-						_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> {
-							if (capability instanceof IItemHandlerModifiable) {
-								ItemStack _stk = capability.getStackInSlot(_slotid).copy();
-								_stk.shrink(_amount);
-								((IItemHandlerModifiable) capability).setStackInSlot(_slotid, _stk);
-							}
-						});
+					{
+						BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
+						if (_ent != null) {
+							final int _slotid = 1;
+							final int _amount = (int) cost1;
+							_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> {
+								if (capability instanceof IItemHandlerModifiable) {
+									ItemStack _stk = capability.getStackInSlot(_slotid).copy();
+									_stk.shrink(_amount);
+									((IItemHandlerModifiable) capability).setStackInSlot(_slotid, _stk);
+								}
+							});
+						}
 					}
-				}
-				{
-					BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
-					if (_ent != null) {
-						final int _slotid = 3;
-						final int _amount = (int) cost3;
-						_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> {
-							if (capability instanceof IItemHandlerModifiable) {
-								ItemStack _stk = capability.getStackInSlot(_slotid).copy();
-								_stk.shrink(_amount);
-								((IItemHandlerModifiable) capability).setStackInSlot(_slotid, _stk);
-							}
-						});
+					{
+						BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
+						if (_ent != null) {
+							final int _slotid = 2;
+							final int _amount = (int) cost2;
+							_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> {
+								if (capability instanceof IItemHandlerModifiable) {
+									ItemStack _stk = capability.getStackInSlot(_slotid).copy();
+									_stk.shrink(_amount);
+									((IItemHandlerModifiable) capability).setStackInSlot(_slotid, _stk);
+								}
+							});
+						}
 					}
-				}
-				Blueprint = new ItemStack(WargleModItems.BLUEPRINT.get());
-				Blueprint.getOrCreateTag().putString("blueprintType", itemMade);
-				(Blueprint).setHoverName(Component.literal(("Blueprint - " + itemMade)));
-				{
-					BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
-					if (_ent != null) {
-						final int _slotid = 4;
-						final ItemStack _setstack = Blueprint;
-						_setstack.setCount(1);
-						_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> {
-							if (capability instanceof IItemHandlerModifiable)
-								((IItemHandlerModifiable) capability).setStackInSlot(_slotid, _setstack);
-						});
+					{
+						BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
+						if (_ent != null) {
+							final int _slotid = 3;
+							final int _amount = (int) cost3;
+							_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> {
+								if (capability instanceof IItemHandlerModifiable) {
+									ItemStack _stk = capability.getStackInSlot(_slotid).copy();
+									_stk.shrink(_amount);
+									((IItemHandlerModifiable) capability).setStackInSlot(_slotid, _stk);
+								}
+							});
+						}
+					}
+					Blueprint = new ItemStack(WargleModItems.BLUEPRINT.get());
+					Blueprint.getOrCreateTag().putString("blueprintType", itemMade);
+					Blueprint.getOrCreateTag().putDouble("itemTier", tier);
+					(Blueprint).setHoverName(Component.literal(("Blueprint - " + itemMade)));
+					{
+						BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
+						if (_ent != null) {
+							final int _slotid = 4;
+							final ItemStack _setstack = Blueprint;
+							_setstack.setCount(1);
+							_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> {
+								if (capability instanceof IItemHandlerModifiable)
+									((IItemHandlerModifiable) capability).setStackInSlot(_slotid, _setstack);
+							});
+						}
 					}
 				}
 			}

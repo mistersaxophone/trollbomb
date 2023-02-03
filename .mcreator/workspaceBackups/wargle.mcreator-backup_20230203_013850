@@ -280,6 +280,35 @@
         ]
       },
       "path": "~/experimental"
+    },
+    {
+      "name": "BlueprintMakerMakeBlueprint",
+      "type": "procedure",
+      "sortid": 29,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "blueprint_maker_make_blueprint",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/experimental"
     }
   ],
   "variable_elements": [],
