@@ -72,8 +72,6 @@ public class BlueprintMakerGUIScreen extends AbstractContainerScreen<BlueprintMa
 
 	@Override
 	protected void renderLabels(PoseStack poseStack, int mouseX, int mouseY) {
-		if (BlueprintMakerButtonDisplayConditionProcedure.execute(world, x, y, z))
-			this.font.draw(poseStack, "" + (entity.getPersistentData().getString("producedItem")) + "", 30, 66, -12829636);
 	}
 
 	@Override

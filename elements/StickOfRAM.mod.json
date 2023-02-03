@@ -8,7 +8,7 @@
     "name": "Stick Of RAM",
     "rarity": "COMMON",
     "creativeTab": {
-      "value": "MISC"
+      "value": "CUSTOM:AWESOMESHOP"
     },
     "stackSize": 64,
     "enchantability": 0,

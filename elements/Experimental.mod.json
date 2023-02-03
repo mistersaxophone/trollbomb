@@ -4,7 +4,7 @@
   "definition": {
     "name": "Experimental",
     "icon": {
-      "value": "CUSTOM:Battery"
+      "value": "CUSTOM:Blueprint"
     },
     "showSearch": false
   }

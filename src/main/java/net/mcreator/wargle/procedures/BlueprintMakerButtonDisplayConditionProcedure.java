@@ -6,8 +6,6 @@ import net.minecraft.core.BlockPos;
 
 public class BlueprintMakerButtonDisplayConditionProcedure {
 	public static boolean execute(LevelAccessor world, double x, double y, double z) {
-		boolean bruh = false;
-		bruh = true;
 		if ((new Object() {
 			public String getValue(LevelAccessor world, BlockPos pos, String tag) {
 				BlockEntity blockEntity = world.getBlockEntity(pos);
@@ -16,8 +14,8 @@ public class BlueprintMakerButtonDisplayConditionProcedure {
 				return "";
 			}
 		}.getValue(world, new BlockPos(x, y, z), "producedItem")).equals("#")) {
-			bruh = false;
+			return false;
 		}
-		return bruh;
+		return true;
 	}
 }

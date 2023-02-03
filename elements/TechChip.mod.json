@@ -8,7 +8,7 @@
     "name": "Tech Chip",
     "rarity": "COMMON",
     "creativeTab": {
-      "value": "MISC"
+      "value": "CUSTOM:AWESOMESHOP"
     },
     "stackSize": 64,
     "enchantability": 0,

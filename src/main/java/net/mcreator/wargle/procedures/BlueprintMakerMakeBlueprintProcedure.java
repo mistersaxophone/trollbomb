@@ -27,6 +27,7 @@ public class BlueprintMakerMakeBlueprintProcedure {
 		double cost2 = 0;
 		double cost3 = 0;
 		double tier = 0;
+		BlueprintMakerUpdateProcedure.execute(world, x, y, z);
 		paperstack = (new Object() {
 			public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
 				AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);

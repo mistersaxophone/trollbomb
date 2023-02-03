@@ -3,7 +3,7 @@
   "_type": "item",
   "definition": {
     "renderType": 0,
-    "texture": "g",
+    "texture": "blueprint",
     "customModelName": "Normal",
     "name": "Blueprint",
     "rarity": "COMMON",

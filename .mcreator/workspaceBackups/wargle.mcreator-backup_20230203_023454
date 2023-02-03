@@ -291,10 +291,6 @@
       "metadata": {
         "dependencies": [
           {
-            "name": "itemstack",
-            "type": "itemstack"
-          },
-          {
             "name": "x",
             "type": "number"
           },
@@ -313,6 +309,23 @@
         ]
       },
       "path": "~/experimental"
+    },
+    {
+      "name": "GoldWire",
+      "type": "item",
+      "sortid": 30,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gold_wire",
+      "path": "~/kelton"
+    },
+    {
+      "name": "AWESOMESHOP",
+      "type": "tab",
+      "sortid": 31,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "awesomeshop"
     }
   ],
   "variable_elements": [],
@@ -320,27 +333,29 @@
   "language_map": {
     "en_us": {
       "item.wargle.silicon": "Silicon",
+      "item.wargle.plastic_polymer": "Plastic Polymer",
+      "item.wargle.copper_wire": "Copper Wire",
+      "item.wargle.blueprint": "Blueprint",
+      "item.wargle.carbon": "Carbon",
+      "item.wargle.battery": "Battery",
+      "block.wargle.blueprint_maker": "Blueprint Maker",
+      "item.wargle.carbon_plate": "Carbon Plate",
+      "item.wargle.circuit_board": "Circuit Board",
+      "item.wargle.gold_wire": "Gold Wire",
+      "block.wargle.research_bench": "Research Bench",
       "item.wargle.graphene": "Graphene",
       "item.wargle.tech_card": "Tech Card",
-      "item.wargle.plastic_polymer": "Plastic Polymer",
       "block.wargle.blueprint_builder": "Blueprint Builder",
       "itemGroup.tabexperimental": "Experimental",
-      "item.wargle.copper_wire": "Copper Wire",
       "item.wargle.silicon_board": "Silicon Board",
-      "item.wargle.blueprint": "Blueprint",
       "item.wargle.advanced_pin_system": "Advanced Pin System",
-      "item.wargle.carbon": "Carbon",
       "item.wargle.tech_chip": "Tech Chip",
       "item.wargle.stick_of_ram": "Stick Of RAM",
-      "item.wargle.battery": "Battery",
       "item.wargle.research_print": "Research Print",
-      "block.wargle.blueprint_maker": "Blueprint Maker",
       "item.wargle.aa_battery": "AA Battery",
       "item.wargle.advanced_plastic": "Advanced Plastic",
-      "item.wargle.carbon_plate": "Carbon Plate",
-      "item.wargle.research_tablet": "Research Tablet",
-      "item.wargle.circuit_board": "Circuit Board",
-      "block.wargle.research_bench": "Research Bench"
+      "itemGroup.tabawesomeshop": "AWESOME SHOP",
+      "item.wargle.research_tablet": "Research Tablet"
     }
   },
   "foldersRoot": {
@@ -348,6 +363,10 @@
     "children": [
       {
         "name": "experimental",
+        "children": []
+      },
+      {
+        "name": "kelton",
         "children": []
       }
     ]
