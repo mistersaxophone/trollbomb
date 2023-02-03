@@ -1,0 +1,369 @@
+{
+  "mod_elements": [
+    {
+      "name": "StickOfRAM",
+      "type": "item",
+      "sortid": 1,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "stick_of_ram"
+    },
+    {
+      "name": "TechChip",
+      "type": "item",
+      "sortid": 2,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tech_chip"
+    },
+    {
+      "name": "TechCard",
+      "type": "item",
+      "sortid": 3,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tech_card"
+    },
+    {
+      "name": "CircuitBoard",
+      "type": "item",
+      "sortid": 4,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "circuit_board"
+    },
+    {
+      "name": "AdvancedPinSystem",
+      "type": "item",
+      "sortid": 5,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "advanced_pin_system"
+    },
+    {
+      "name": "SiliconBoard",
+      "type": "item",
+      "sortid": 6,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "silicon_board"
+    },
+    {
+      "name": "AABattery",
+      "type": "item",
+      "sortid": 7,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "aa_battery"
+    },
+    {
+      "name": "Battery",
+      "type": "item",
+      "sortid": 8,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "battery"
+    },
+    {
+      "name": "CopperWire",
+      "type": "item",
+      "sortid": 11,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "copper_wire"
+    },
+    {
+      "name": "CarbonPlate",
+      "type": "item",
+      "sortid": 12,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "carbon_plate"
+    },
+    {
+      "name": "Carbon",
+      "type": "item",
+      "sortid": 13,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "carbon"
+    },
+    {
+      "name": "Silicon",
+      "type": "item",
+      "sortid": 14,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "silicon"
+    },
+    {
+      "name": "PlasticPolymer",
+      "type": "item",
+      "sortid": 15,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "plastic_polymer"
+    },
+    {
+      "name": "AdvancedPlastic",
+      "type": "item",
+      "sortid": 16,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "advanced_plastic"
+    },
+    {
+      "name": "Graphene",
+      "type": "item",
+      "sortid": 17,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "graphene"
+    },
+    {
+      "name": "Experimental",
+      "type": "tab",
+      "sortid": 18,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "experimental",
+      "path": "~/experimental"
+    },
+    {
+      "name": "ResearchBench",
+      "type": "block",
+      "sortid": 18,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "research_bench",
+      "path": "~/experimental"
+    },
+    {
+      "name": "ResearchTablet",
+      "type": "item",
+      "sortid": 19,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "research_tablet",
+      "path": "~/experimental"
+    },
+    {
+      "name": "ResearchGUI",
+      "type": "gui",
+      "sortid": 19,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "research_gui",
+      "path": "~/experimental"
+    },
+    {
+      "name": "BlueprintBuilderGUI",
+      "type": "gui",
+      "sortid": 20,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "blueprint_builder_gui",
+      "path": "~/experimental"
+    },
+    {
+      "name": "BlueprintBuilder",
+      "type": "block",
+      "sortid": 21,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "blueprint_builder",
+      "path": "~/experimental"
+    },
+    {
+      "name": "Blueprint",
+      "type": "item",
+      "sortid": 22,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "blueprint",
+      "path": "~/experimental"
+    },
+    {
+      "name": "ResearchPrint",
+      "type": "item",
+      "sortid": 23,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "research_print",
+      "path": "~/experimental"
+    },
+    {
+      "name": "ResearchBenchUpdate",
+      "type": "procedure",
+      "sortid": 24,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "research_bench_update",
+      "metadata": {
+        "dependencies": []
+      },
+      "path": "~/experimental"
+    },
+    {
+      "name": "BlueprintMaker",
+      "type": "block",
+      "sortid": 25,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "blueprint_maker",
+      "path": "~/experimental"
+    },
+    {
+      "name": "BlueprintMakerGUI",
+      "type": "gui",
+      "sortid": 26,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "blueprint_maker_gui",
+      "path": "~/experimental"
+    },
+    {
+      "name": "BlueprintMakerUpdate",
+      "type": "procedure",
+      "sortid": 27,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "blueprint_maker_update",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/experimental"
+    },
+    {
+      "name": "BlueprintMakerButtonDisplayCondition",
+      "type": "procedure",
+      "sortid": 28,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "blueprint_maker_button_display_condition",
+      "metadata": {
+        "return_type": "logic",
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/experimental"
+    },
+    {
+      "name": "BlueprintMakerMakeBlueprint",
+      "type": "procedure",
+      "sortid": 29,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "blueprint_maker_make_blueprint",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/experimental"
+    }
+  ],
+  "variable_elements": [],
+  "sound_elements": [],
+  "language_map": {
+    "en_us": {
+      "item.wargle.silicon": "Silicon",
+      "item.wargle.graphene": "Graphene",
+      "item.wargle.tech_card": "Tech Card",
+      "item.wargle.plastic_polymer": "Plastic Polymer",
+      "block.wargle.blueprint_builder": "Blueprint Builder",
+      "itemGroup.tabexperimental": "Experimental",
+      "item.wargle.copper_wire": "Copper Wire",
+      "item.wargle.silicon_board": "Silicon Board",
+      "item.wargle.blueprint": "Blueprint",
+      "item.wargle.advanced_pin_system": "Advanced Pin System",
+      "item.wargle.carbon": "Carbon",
+      "item.wargle.tech_chip": "Tech Chip",
+      "item.wargle.stick_of_ram": "Stick Of RAM",
+      "item.wargle.battery": "Battery",
+      "item.wargle.research_print": "Research Print",
+      "block.wargle.blueprint_maker": "Blueprint Maker",
+      "item.wargle.aa_battery": "AA Battery",
+      "item.wargle.advanced_plastic": "Advanced Plastic",
+      "item.wargle.carbon_plate": "Carbon Plate",
+      "item.wargle.research_tablet": "Research Tablet",
+      "item.wargle.circuit_board": "Circuit Board",
+      "block.wargle.research_bench": "Research Bench"
+    }
+  },
+  "foldersRoot": {
+    "name": "~",
+    "children": [
+      {
+        "name": "experimental",
+        "children": []
+      }
+    ]
+  },
+  "workspaceSettings": {
+    "modid": "wargle",
+    "modName": "wargle",
+    "version": "1.0.0",
+    "author": "Henrik, MCreator",
+    "websiteURL": "https://mcreator.net",
+    "license": "Academic Free License v3.0",
+    "disableForgeVersionCheck": true,
+    "serverSideOnly": false,
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [],
+    "currentGenerator": "forge-1.19.2",
+    "modElementsPackage": "net.mcreator.wargle",
+    "lockBaseModFiles": false
+  },
+  "mcreatorVersion": 202200348217
+}

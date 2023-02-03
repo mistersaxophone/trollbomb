@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "wargle:blocks/g",
+    "up": "wargle:blocks/g",
+    "north": "wargle:blocks/g",
+    "east": "wargle:blocks/g",
+    "south": "wargle:blocks/g",
+    "west": "wargle:blocks/g",
+    "particle": "wargle:blocks/g"
+  },
+  "render_type": "solid"
+}

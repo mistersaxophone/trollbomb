@@ -1,0 +1,137 @@
+{
+  "_fv": 34,
+  "_type": "gui",
+  "definition": {
+    "type": 1,
+    "width": 176,
+    "height": 166,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": "Items.PAPER"
+          },
+          "id": 0,
+          "disableStackInteraction": false,
+          "dropItemsWhenNotBound": true,
+          "onSlotChanged": {
+            "name": "BlueprintMakerUpdate"
+          },
+          "name": "Slot #0",
+          "x": 132,
+          "y": 43
+        }
+      },
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": ""
+          },
+          "id": 1,
+          "disableStackInteraction": false,
+          "dropItemsWhenNotBound": true,
+          "onSlotChanged": {
+            "name": "BlueprintMakerUpdate"
+          },
+          "name": "Slot #1",
+          "x": 265,
+          "y": 48
+        }
+      },
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": ""
+          },
+          "id": 2,
+          "disableStackInteraction": false,
+          "dropItemsWhenNotBound": true,
+          "onSlotChanged": {
+            "name": "BlueprintMakerUpdate"
+          },
+          "name": "Slot #2",
+          "x": 265,
+          "y": 72
+        }
+      },
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": ""
+          },
+          "id": 3,
+          "disableStackInteraction": false,
+          "dropItemsWhenNotBound": true,
+          "onSlotChanged": {
+            "name": "BlueprintMakerUpdate"
+          },
+          "name": "Slot #3",
+          "x": 264,
+          "y": 94
+        }
+      },
+      {
+        "type": "outputslot",
+        "data": {
+          "id": 4,
+          "disableStackInteraction": false,
+          "dropItemsWhenNotBound": true,
+          "onSlotChanged": {
+            "name": "BlueprintMakerUpdate"
+          },
+          "name": "Slot #4",
+          "x": 131,
+          "y": 96
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Make Blueprint",
+          "onClick": {
+            "name": "BlueprintMakerMakeBlueprint"
+          },
+          "displayCondition": {
+            "name": "BlueprintMakerButtonDisplayCondition"
+          },
+          "width": 98,
+          "height": 20,
+          "name": "Make Blueprint",
+          "x": 158,
+          "y": 70
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "<ENBT:text:producedItem>",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "BlueprintMakerButtonDisplayCondition"
+          },
+          "name": "<ENBT:text:producedItem>",
+          "x": 156,
+          "y": 103
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": false
+    }
+  }
+}
