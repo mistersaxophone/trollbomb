@@ -127,7 +127,7 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "experimental",
-      "path": "~/experimental"
+      "path": "~/experimental/Research"
     },
     {
       "name": "ResearchBench",
@@ -136,7 +136,7 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "research_bench",
-      "path": "~/experimental"
+      "path": "~/experimental/Research"
     },
     {
       "name": "ResearchTablet",
@@ -145,7 +145,7 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "research_tablet",
-      "path": "~/experimental"
+      "path": "~/experimental/Research"
     },
     {
       "name": "ResearchGUI",
@@ -154,7 +154,7 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "research_gui",
-      "path": "~/experimental"
+      "path": "~/experimental/Research"
     },
     {
       "name": "BlueprintBuilderGUI",
@@ -163,7 +163,7 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "blueprint_builder_gui",
-      "path": "~/experimental"
+      "path": "~/experimental/Research"
     },
     {
       "name": "BlueprintBuilder",
@@ -172,7 +172,7 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "blueprint_builder",
-      "path": "~/experimental"
+      "path": "~/experimental/Research"
     },
     {
       "name": "Blueprint",
@@ -181,7 +181,7 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "blueprint",
-      "path": "~/experimental"
+      "path": "~/experimental/Research"
     },
     {
       "name": "ResearchPrint",
@@ -190,7 +190,7 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "research_print",
-      "path": "~/experimental"
+      "path": "~/experimental/Research"
     },
     {
       "name": "ResearchBenchUpdate",
@@ -202,7 +202,7 @@
       "metadata": {
         "dependencies": []
       },
-      "path": "~/experimental"
+      "path": "~/experimental/Research"
     },
     {
       "name": "BlueprintMaker",
@@ -211,7 +211,7 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "blueprint_maker",
-      "path": "~/experimental"
+      "path": "~/experimental/Research"
     },
     {
       "name": "BlueprintMakerGUI",
@@ -220,7 +220,7 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "blueprint_maker_gui",
-      "path": "~/experimental"
+      "path": "~/experimental/Research"
     },
     {
       "name": "BlueprintMakerUpdate",
@@ -249,7 +249,7 @@
           }
         ]
       },
-      "path": "~/experimental"
+      "path": "~/experimental/Research"
     },
     {
       "name": "BlueprintMakerButtonDisplayCondition",
@@ -279,7 +279,7 @@
           }
         ]
       },
-      "path": "~/experimental"
+      "path": "~/experimental/Research"
     },
     {
       "name": "BlueprintMakerMakeBlueprint",
@@ -308,7 +308,7 @@
           }
         ]
       },
-      "path": "~/experimental"
+      "path": "~/experimental/Research"
     },
     {
       "name": "GoldWire",
@@ -354,7 +354,7 @@
           }
         ]
       },
-      "path": "~/experimental/Recipe Procedures"
+      "path": "~/experimental/Research/Recipe Procedures"
     },
     {
       "name": "TwoItemRecipes",
@@ -383,7 +383,7 @@
           }
         ]
       },
-      "path": "~/experimental/Recipe Procedures"
+      "path": "~/experimental/Research/Recipe Procedures"
     },
     {
       "name": "ThreeItemRecipes",
@@ -412,7 +412,125 @@
           }
         ]
       },
-      "path": "~/experimental/Recipe Procedures"
+      "path": "~/experimental/Research/Recipe Procedures"
+    },
+    {
+      "name": "AugmentationTable",
+      "type": "block",
+      "sortid": 35,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "augmentation_table",
+      "path": "~/experimental/Augmentation"
+    },
+    {
+      "name": "AugmentationTableGUI",
+      "type": "gui",
+      "sortid": 36,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "augmentation_table_gui",
+      "path": "~/experimental/Augmentation"
+    },
+    {
+      "name": "AugmentableArmor",
+      "type": "tag",
+      "sortid": 38,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "augmentable_armor",
+      "path": "~/experimental/Augmentation"
+    },
+    {
+      "name": "AugmentableTools",
+      "type": "tag",
+      "sortid": 39,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "augmentable_tools",
+      "path": "~/experimental/Augmentation"
+    },
+    {
+      "name": "AugmentationTableUpdate",
+      "type": "procedure",
+      "sortid": 37,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "augmentation_table_update",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/experimental/Augmentation"
+    },
+    {
+      "name": "ArmorAugments",
+      "type": "tag",
+      "sortid": 40,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "armor_augments",
+      "path": "~/experimental/Augmentation"
+    },
+    {
+      "name": "ToolAugments",
+      "type": "tag",
+      "sortid": 41,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tool_augments",
+      "path": "~/experimental/Augmentation"
+    },
+    {
+      "name": "DefenseGem",
+      "type": "item",
+      "sortid": 42,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "defense_gem",
+      "path": "~/experimental/Augmentation"
+    },
+    {
+      "name": "GargleCommandProcedure",
+      "type": "procedure",
+      "sortid": 43,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gargle_command_procedure",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "arguments",
+            "type": "cmdcontext"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/experimental/Testing"
+    },
+    {
+      "name": "Gargle",
+      "type": "command",
+      "sortid": 43,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gargle",
+      "path": "~/experimental/Testing"
+    },
+    {
+      "name": "Gargletastical",
+      "type": "code",
+      "sortid": 44,
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "gargletastical"
     }
   ],
   "variable_elements": [],
@@ -439,8 +557,10 @@
       "item.wargle.tech_chip": "Tech Chip",
       "item.wargle.stick_of_ram": "Stick Of RAM",
       "item.wargle.research_print": "Research Print",
+      "item.wargle.defense_gem": "Defense Gem",
       "item.wargle.aa_battery": "AA Battery",
       "item.wargle.advanced_plastic": "Advanced Plastic",
+      "block.wargle.augmentation_table": "Augmentation Table",
       "itemGroup.tabawesomeshop": "AWESOME SHOP",
       "item.wargle.research_tablet": "Research Tablet"
     }
@@ -452,7 +572,20 @@
         "name": "experimental",
         "children": [
           {
-            "name": "Recipe Procedures",
+            "name": "Research",
+            "children": [
+              {
+                "name": "Recipe Procedures",
+                "children": []
+              }
+            ]
+          },
+          {
+            "name": "Augmentation",
+            "children": []
+          },
+          {
+            "name": "Testing",
             "children": []
           }
         ]

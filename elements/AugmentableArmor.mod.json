@@ -1,0 +1,27 @@
+{
+  "_fv": 34,
+  "_type": "tag",
+  "definition": {
+    "type": "Items",
+    "items": [
+      {
+        "value": "Items.NETHERITE_HELMET"
+      },
+      {
+        "value": "Items.NETHERITE_CHESTPLATE"
+      },
+      {
+        "value": "Items.NETHERITE_LEGGINGS"
+      },
+      {
+        "value": "Items.NETHERITE_BOOTS"
+      }
+    ],
+    "blocks": [],
+    "functions": [],
+    "entities": [],
+    "biomes": [],
+    "name": "augmentable_armor",
+    "namespace": "mod"
+  }
+}

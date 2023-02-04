@@ -19,8 +19,10 @@
   "item.wargle.tech_chip": "Tech Chip",
   "item.wargle.stick_of_ram": "Stick Of RAM",
   "item.wargle.research_print": "Research Print",
+  "item.wargle.defense_gem": "Defense Gem",
   "item.wargle.aa_battery": "AA Battery",
   "item.wargle.advanced_plastic": "Advanced Plastic",
+  "block.wargle.augmentation_table": "Augmentation Table",
   "itemGroup.tabawesomeshop": "AWESOME SHOP",
   "item.wargle.research_tablet": "Research Tablet"
 }

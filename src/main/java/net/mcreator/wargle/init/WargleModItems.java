@@ -23,6 +23,7 @@ import net.mcreator.wargle.item.ResearchPrintItem;
 import net.mcreator.wargle.item.PlasticPolymerItem;
 import net.mcreator.wargle.item.GrapheneItem;
 import net.mcreator.wargle.item.GoldWireItem;
+import net.mcreator.wargle.item.DefenseGemItem;
 import net.mcreator.wargle.item.CopperWireItem;
 import net.mcreator.wargle.item.CircuitBoardItem;
 import net.mcreator.wargle.item.CarbonPlateItem;
@@ -58,6 +59,8 @@ public class WargleModItems {
 	public static final RegistryObject<Item> RESEARCH_PRINT = REGISTRY.register("research_print", () -> new ResearchPrintItem());
 	public static final RegistryObject<Item> BLUEPRINT_MAKER = block(WargleModBlocks.BLUEPRINT_MAKER, WargleModTabs.TAB_EXPERIMENTAL);
 	public static final RegistryObject<Item> GOLD_WIRE = REGISTRY.register("gold_wire", () -> new GoldWireItem());
+	public static final RegistryObject<Item> AUGMENTATION_TABLE = block(WargleModBlocks.AUGMENTATION_TABLE, WargleModTabs.TAB_EXPERIMENTAL);
+	public static final RegistryObject<Item> DEFENSE_GEM = REGISTRY.register("defense_gem", () -> new DefenseGemItem());
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block, CreativeModeTab tab) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties().tab(tab)));

@@ -14,6 +14,7 @@ import net.minecraft.client.gui.screens.MenuScreens;
 import net.mcreator.wargle.client.gui.ResearchGUIScreen;
 import net.mcreator.wargle.client.gui.BlueprintMakerGUIScreen;
 import net.mcreator.wargle.client.gui.BlueprintBuilderGUIScreen;
+import net.mcreator.wargle.client.gui.AugmentationTableGUIScreen;
 
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
 public class WargleModScreens {
@@ -23,6 +24,7 @@ public class WargleModScreens {
 			MenuScreens.register(WargleModMenus.RESEARCH_GUI.get(), ResearchGUIScreen::new);
 			MenuScreens.register(WargleModMenus.BLUEPRINT_BUILDER_GUI.get(), BlueprintBuilderGUIScreen::new);
 			MenuScreens.register(WargleModMenus.BLUEPRINT_MAKER_GUI.get(), BlueprintMakerGUIScreen::new);
+			MenuScreens.register(WargleModMenus.AUGMENTATION_TABLE_GUI.get(), AugmentationTableGUIScreen::new);
 		});
 	}
 }

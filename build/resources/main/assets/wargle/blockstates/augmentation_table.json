@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "wargle:block/augmentation_table"
+    }
+  }
+}

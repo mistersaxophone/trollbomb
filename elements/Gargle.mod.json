@@ -1,0 +1,9 @@
+{
+  "_fv": 34,
+  "_type": "command",
+  "definition": {
+    "commandName": "gargle",
+    "permissionLevel": "4",
+    "argsxml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"args_start\" deletable=\"false\" x=\"40\" y=\"40\"><next><block type=\"string\"><field name=\"type\">word</field><field name=\"name\">s1</field><statement name=\"args\"><block type=\"string\"><field name=\"type\">word</field><field name=\"name\">s2</field><statement name=\"args\"><block type=\"call_procedure\"><field name=\"procedure\">GargleCommandProcedure</field></block></statement></block></statement></block></next></block></xml>"
+  }
+}

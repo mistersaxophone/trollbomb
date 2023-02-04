@@ -14,6 +14,7 @@ import net.minecraft.world.inventory.MenuType;
 import net.mcreator.wargle.world.inventory.ResearchGUIMenu;
 import net.mcreator.wargle.world.inventory.BlueprintMakerGUIMenu;
 import net.mcreator.wargle.world.inventory.BlueprintBuilderGUIMenu;
+import net.mcreator.wargle.world.inventory.AugmentationTableGUIMenu;
 import net.mcreator.wargle.WargleMod;
 
 public class WargleModMenus {
@@ -24,4 +25,6 @@ public class WargleModMenus {
 			() -> IForgeMenuType.create(BlueprintBuilderGUIMenu::new));
 	public static final RegistryObject<MenuType<BlueprintMakerGUIMenu>> BLUEPRINT_MAKER_GUI = REGISTRY.register("blueprint_maker_gui",
 			() -> IForgeMenuType.create(BlueprintMakerGUIMenu::new));
+	public static final RegistryObject<MenuType<AugmentationTableGUIMenu>> AUGMENTATION_TABLE_GUI = REGISTRY.register("augmentation_table_gui",
+			() -> IForgeMenuType.create(AugmentationTableGUIMenu::new));
 }
