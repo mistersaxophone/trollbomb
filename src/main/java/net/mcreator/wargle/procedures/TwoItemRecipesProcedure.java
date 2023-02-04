@@ -29,13 +29,6 @@ public class TwoItemRecipesProcedure {
 		double itemTier = 0;
 		ItemStack stack1 = ItemStack.EMPTY;
 		ItemStack stack2 = ItemStack.EMPTY;
-		cost3 = 0;
-		cost4 = 0;
-		cost5 = 0;
-		cost6 = 0;
-		cost7 = 0;
-		cost8 = 0;
-		cost9 = 0;
 		stack1 = (new Object() {
 			public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
 				AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
@@ -69,6 +62,13 @@ public class TwoItemRecipesProcedure {
 			cost2 = 65;
 			itemTier = 0;
 		}
+		cost3 = 0;
+		cost4 = 0;
+		cost5 = 0;
+		cost6 = 0;
+		cost7 = 0;
+		cost8 = 0;
+		cost9 = 0;
 		if ((stack1).getCount() >= cost1 && (stack2).getCount() >= cost2) {
 			if (!world.isClientSide()) {
 				BlockPos _bp = new BlockPos(x, y, z);

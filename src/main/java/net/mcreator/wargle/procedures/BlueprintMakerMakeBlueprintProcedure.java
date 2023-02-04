@@ -137,7 +137,7 @@ public class BlueprintMakerMakeBlueprintProcedure {
 					{
 						BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
 						if (_ent != null) {
-							final int _slotid = 1;
+							final int _slotid = 2;
 							final int _amount = (int) cost1;
 							_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> {
 								if (capability instanceof IItemHandlerModifiable) {
@@ -151,7 +151,7 @@ public class BlueprintMakerMakeBlueprintProcedure {
 					{
 						BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
 						if (_ent != null) {
-							final int _slotid = 2;
+							final int _slotid = 3;
 							final int _amount = (int) cost2;
 							_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> {
 								if (capability instanceof IItemHandlerModifiable) {
@@ -165,7 +165,7 @@ public class BlueprintMakerMakeBlueprintProcedure {
 					{
 						BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
 						if (_ent != null) {
-							final int _slotid = 3;
+							final int _slotid = 4;
 							final int _amount = (int) cost3;
 							_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> {
 								if (capability instanceof IItemHandlerModifiable) {
@@ -179,6 +179,7 @@ public class BlueprintMakerMakeBlueprintProcedure {
 					Blueprint = new ItemStack(WargleModItems.BLUEPRINT.get());
 					Blueprint.getOrCreateTag().putString("blueprintType", itemMade);
 					Blueprint.getOrCreateTag().putDouble("itemTier", tier);
+					Blueprint.getOrCreateTag().putDouble("energy", 0);
 					(Blueprint).setHoverName(Component.literal(("Blueprint - " + itemMade)));
 					{
 						BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));

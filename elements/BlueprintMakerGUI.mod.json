@@ -114,8 +114,11 @@
         "data": {
           "text": "<ENBT:text:producedItem>",
           "color": {
-            "value": -12829636,
+            "value": -13369345,
             "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "BlueprintMakerButtonDisplayCondition"
           },
           "name": "<ENBT:text:producedItem>",
           "x": 154,
